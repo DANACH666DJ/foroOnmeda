@@ -38,7 +38,6 @@ class ForosPozSpider(scrapy.Spider):
                     'forum_title': forum_title,
                     'forum_text': forum_text,
                     }
-            print "HOLAAA",meta
             # para probar solo con una url de un tema
             if forum_url == "http://www.onmeda.es/foros/contracepción":
                 yield scrapy.Request(forum_url, callback=self.parse_urlsPagAsuntos, meta=meta)
@@ -63,17 +62,14 @@ class ForosPozSpider(scrapy.Spider):
     def parse_urlsPagPost(self, response):
         # recibo los datos del  meta
         meta = response.meta
-        post_title = response.xpath('//h2[@class="b-post__title js-post-title OLD__post-title"]/text()').extract()[0].strip()
-        # le añado al meta que recibo mas datos
-        meta['post_title'] = post_title
         # creo un xpath que recorre todos los userPost,totalMesUser,karma,date y textPost
-        items = response.xpath('//ul[@class="conversation-list list-container h-clearfix   thread-view"]')
+        items = response.xpath('//div[@class="l-row l-row__fixed--left"]')
         for article in items:
             post_user = article.xpath('.//div[@class="author h-text-size--14"]//a/text()').extract_first()
             post_member_group = article.xpath('.//div[@class="usertitle"]/text()').extract_first().strip()
             post_date = article.xpath('.//div[@class="b-post__timestamp OLD__post-date"]/time/text()').extract_first()
             post_count = article.xpath('.//li[@class="b-userinfo__additional-info"][2]/span/text()').extract_first()
-            post_text = article.xpath('.//div[@class="js-post__content-text OLD__post-content-text restore h-wordwrap"]/text()').extract()
+            post_text = article.xpath('.//div[@class="js-post__content-text OLD__post-content-text restore h-wordwrap"]//text()').extract()
             # cogemos el texto y lo metemos como parametro al metodo clean para que nos deje solo el texto sin espacios
             post_text = self.clean_and_flatten(post_text)
             # url de cada usuario para poder obtener los datos del usuario
@@ -97,7 +93,7 @@ class ForosPozSpider(scrapy.Spider):
             if text_str == None:
                 continue
             if len(text_str.strip()) > 0:
-                clean_text.append(text_str)
+                clean_text.append(text_str.strip())
 
         return "\n".join(clean_text).strip()
 
@@ -111,7 +107,6 @@ class ForosPozSpider(scrapy.Spider):
         item['subject_url'] = meta['subject_url']
         item['subject_user'] = meta['subject_user']
         item['subject_title'] = meta['subject_title']
-        item['post_title'] = meta['post_title']
         item['post_user'] = meta['post_user']
         item['post_member_group'] = meta['post_member_group']
         item['post_date'] = meta['post_date']

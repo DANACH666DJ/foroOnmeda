@@ -17,7 +17,6 @@ class forosOnmedaSpyder(scrapy.Item):
     subject_url = scrapy.Field()
     subject_title = scrapy.Field()
     subject_user = scrapy.Field()
-    post_title = scrapy.Field()
     post_user = scrapy.Field()
     post_member_group = scrapy.Field()
     post_date = scrapy.Field()
