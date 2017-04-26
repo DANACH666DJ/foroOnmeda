@@ -59,6 +59,13 @@ class ForosPozSpider(scrapy.Spider):
             meta['subject_user'] = subject_user
             yield scrapy.Request(subject_url, callback=self.parse_urlsPagPost, meta=meta)
 
+        # paginación de la página de asuntos
+        next_page = response.xpath("//a[@class='arrow right-arrow ']/@href").extract_first()
+        if not next_page is None:
+            yield scrapy.Request(next_page, callback=self.parse_urlsPagAsuntos, meta=response.meta)
+
+
+
     def parse_urlsPagPost(self, response):
         # recibo los datos del  meta
         meta = response.meta
@@ -69,7 +76,8 @@ class ForosPozSpider(scrapy.Spider):
             post_member_group = article.xpath('.//div[@class="usertitle"]/text()').extract_first().strip()
             post_date = article.xpath('.//div[@class="b-post__timestamp OLD__post-date"]/time/text()').extract_first()
             post_count = article.xpath('.//li[@class="b-userinfo__additional-info"][2]/span/text()').extract_first()
-            post_text = article.xpath('.//div[@class="js-post__content-text OLD__post-content-text restore h-wordwrap"]//text()').extract()
+            post_text = article.xpath(
+                './/div[@class="js-post__content-text OLD__post-content-text restore h-wordwrap"]//text()').extract()
             # cogemos el texto y lo metemos como parametro al metodo clean para que nos deje solo el texto sin espacios
             post_text = self.clean_and_flatten(post_text)
             # url de cada usuario para poder obtener los datos del usuario
@@ -81,10 +89,47 @@ class ForosPozSpider(scrapy.Spider):
             meta['post_count'] = post_count
             meta['post_text'] = post_text
             meta['user_url'] = user_url
-            meta['user_location'] = None
-            meta['user_date_registered'] = None
-            yield self.create_item(meta)
 
+            # hacemos otra request con la url del user y le mandamos todos los datos guardados del item
+            if user_url is not None:
+                yield scrapy.Request(user_url, callback=self.parse_urlUserRegister, meta=meta, dont_filter=True)
+            else:
+                # si el user no tiene url(es decir no tiene datos),ponemos a null todos y creamos el item ya
+                meta['user_last_activity'] = None
+                meta['user_date_registered'] = None
+                meta['user_location'] = None
+                yield self.create_item(meta)
+
+        # paginación de la página de asuntos
+        next_page = response.xpath("//a[@class='arrow right-arrow ']/@href").extract_first()
+        if not next_page is None:
+            yield scrapy.Request(next_page, callback=self.parse_urlsPagPost, meta=response.meta)
+
+    def parse_urlUserRegister(self, response):
+        # recibo los datos
+        meta = response.meta
+        # los inicio a null por si el usuario no tiene los datos
+        meta['user_last_activity'] = None
+        meta['user_date_registered'] = None
+        meta['user_location'] = None
+        # recorro los listados de datos de los usuarios para ir recogiendo sus datos
+        for nodes in response.xpath('//div[@class="profile-info"]'):
+            user_last_activity = nodes.xpath('.//div[@class="profile-info-item"][1]/text()').extract_first()
+            if not user_last_activity == None:
+                meta['user_last_activity'] = user_last_activity
+            user_date_registered = nodes.xpath('.//div[@class="profile-info-item"][2]/text()').extract_first()
+            if not user_date_registered == None:
+                meta['user_date_registered'] = user_date_registered
+            user_location = nodes.xpath('.//div[@class="profile-info-item"][3]/text()').extract()
+            # cast de user_location a string ,puesto que el xpath devuelve una lista con un indice
+            user_location = str(user_location[0])
+            # transformo el user_location a utf8
+            user_location = unicode(user_location, "utf-8")
+            if not user_location == None and not user_location == "Ubicación: ":
+                meta['user_location'] = user_location
+
+        # finalmente después de conseguir todos los datos y introducirlos en el meta ,llamo al metodo create item introduciendole por parametro el meta
+        yield self.create_item(meta)
 
     # método para eliminar los espacios en blanco de los textos
     def clean_and_flatten(self, text_list):
@@ -96,7 +141,6 @@ class ForosPozSpider(scrapy.Spider):
                 clean_text.append(text_str.strip())
 
         return "\n".join(clean_text).strip()
-
 
     # método para armar el item con los datos que hemos ido añadiendo al meta
     def create_item(self, meta):
@@ -113,10 +157,8 @@ class ForosPozSpider(scrapy.Spider):
         item['post_count'] = meta['post_count']
         item['post_text'] = meta['post_text']
         item['user_url'] = meta['user_url']
+        item['user_last_activity'] = meta['user_last_activity']
         item['user_location'] = meta['user_location']
         item['user_date_registered'] = meta['user_date_registered']
 
         return item
-
-
-

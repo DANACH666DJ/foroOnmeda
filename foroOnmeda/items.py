@@ -23,6 +23,7 @@ class forosOnmedaSpyder(scrapy.Item):
     post_count = scrapy.Field()
     post_text = scrapy.Field()
     user_url = scrapy.Field()
+    user_last_activity = scrapy.Field()
     user_location = scrapy.Field()
     user_date_registered = scrapy.Field()
     pass
