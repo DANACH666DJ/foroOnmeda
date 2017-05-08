@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35b70719-dd4e-4cb8-9f17-15df037e7bf9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/onmeda.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.~lock.onmeda.csv#" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/onmeda.csv" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/foroOnmeda/items.py" afterPath="$PROJECT_DIR$/foroOnmeda/items.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/foroOnmeda/settings.py" afterPath="$PROJECT_DIR$/foroOnmeda/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/foroOnmeda/spiders/forosOnmedaSpyder.py" afterPath="$PROJECT_DIR$/foroOnmeda/spiders/forosOnmedaSpyder.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/onmeda.xml" afterPath="$PROJECT_DIR$/onmeda.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/foroOnmeda$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1493200699487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foroOnmeda/spiders" />
+    <SUITE FILE_PATH="coverage/foroOnmeda$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1494254033066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foroOnmeda/spiders" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -24,8 +24,8 @@
       <file leaf-file-name="forosOnmedaSpyder.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/foroOnmeda/spiders/forosOnmedaSpyder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="59" column="89" lean-forward="true" selection-start-line="59" selection-start-column="89" selection-end-line="59" selection-end-column="89" />
+            <state relative-caret-position="221">
+              <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -33,10 +33,50 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="fertilidad.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fertilidad.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-21">
+              <caret line="2588" column="48" lean-forward="true" selection-start-line="2588" selection-start-column="48" selection-end-line="2588" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contrap.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contrap.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="67694">
+              <caret line="3982" column="28" lean-forward="false" selection-start-line="3982" selection-start-column="28" selection-end-line="3982" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="onmedaGine.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/onmedaGine.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="onmeda.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/onmeda.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91596">
+              <caret line="5388" column="70" lean-forward="false" selection-start-line="5388" selection-start-column="70" selection-end-line="5388" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/foroOnmeda/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="357">
               <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
               <folding />
             </state>
@@ -66,8 +106,8 @@
       <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/foroOnmeda/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+            <state relative-caret-position="238">
+              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -84,16 +124,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>forum_text</find>
-      <find>http://www.onmeda.es/foros/contracepción/37013-empezar-a-usar-nuvaring</find>
-      <find>fatima123456789</find>
-      <find>post_text</find>
-      <find>http://www.onmeda.es/foros/contracepción/43765-olvido-de-pastillas</find>
-      <find>http://www.onmeda.es/foros/contracepción/41521-píldoras-y-adelantar-semana-de-descanso</find>
-      <find>post_member_group</find>
-      <find>user_location</find>
-      <find>user_date_registered</find>
-      <find>paola enriquez</find>
+      <find>No se si estoy embarazada</find>
+      <find>embarazo</find>
+      <find>mi esposo y yo queremos tener un bebe</find>
+      <find>tengo dudas</find>
+      <find>Tratamiento con Omifín</find>
+      <find>Criopreservación de óvulos</find>
+      <find>Analisis hormonales</find>
+      <find>Omifin, quien lo conoce!?</find>
+      <find>TSH óptima</find>
+      <find>Problemas para embarazarme,</find>
+      <find>Quiero embarazarme pero me corte las trompas hace 15 años.</find>
+      <find>Quiero quedarme embarazada</find>
+      <find>Embarazo ectopico?</find>
+      <find>Embarazo con más de 35 años</find>
+      <find>Quiste funcional</find>
+      <find>como quedo embararazada</find>
+      <find>Consejos para mejorar la fertilidad</find>
+      <find>infertilidad</find>
+      <find>Seminograma</find>
+      <find>retraso mestrual,</find>
+      <find>Ovarios poliquisticos</find>
+      <find>embarazo con otb,</find>
+      <find>Tratamiento con antidepresivos e infertilidad</find>
+      <find>¿Cuándo es más fácil dejar embarazada a una mujer?</find>
+      <find>Infertilidad masculina</find>
+      <find>¿Cuándo dejar de tomarlas?</find>
+      <find>dudas sobre embarazo con ovarios poliquisticos</find>
+      <find>Embarazo después de legrado?</find>
+      <find>No puedo ser madre, ayuda</find>
+      <find>Hola Mecaluña, estas bien? Hace tiempo que no apareces</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,7 +166,9 @@
         <option value="$PROJECT_DIR$/foroOnmeda/settings.py" />
         <option value="$PROJECT_DIR$/foroOnmeda/items.py" />
         <option value="$PROJECT_DIR$/onmeda.xml" />
+        <option value="$PROJECT_DIR$/contrap.xml" />
         <option value="$PROJECT_DIR$/foroOnmeda/spiders/forosOnmedaSpyder.py" />
+        <option value="$PROJECT_DIR$/fertilidad.xml" />
       </list>
     </option>
   </component>
@@ -139,6 +201,16 @@
     <panes>
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foroOnmeda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="foroOnmeda" />
@@ -183,6 +255,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -229,7 +302,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -311,6 +383,29 @@
       <module name="foroOnmeda" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="foroOnmeda" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -441,13 +536,13 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.170347" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.170347" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -469,6 +564,188 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/foroOnmeda/spiders/forosOnmedaSpyder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contrap.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67694">
+          <caret line="3982" column="28" lean-forward="false" selection-start-line="3982" selection-start-column="28" selection-end-line="3982" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onmedaGine.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onmeda.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91596">
+          <caret line="5388" column="70" lean-forward="false" selection-start-line="5388" selection-start-column="70" selection-end-line="5388" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foroOnmeda/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foroOnmeda/spiders/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foroOnmeda/middlewares.py.tmpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foroOnmeda/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foroOnmeda/spiders/forosOnmedaSpyder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contrap.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67694">
+          <caret line="3982" column="28" lean-forward="true" selection-start-line="3982" selection-start-column="28" selection-end-line="3982" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onmedaGine.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onmeda.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91596">
+          <caret line="5388" column="70" lean-forward="false" selection-start-line="5388" selection-start-column="70" selection-end-line="5388" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foroOnmeda/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foroOnmeda/spiders/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foroOnmeda/middlewares.py.tmpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foroOnmeda/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foroOnmeda/spiders/forosOnmedaSpyder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onmeda.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5168">
+          <caret line="304" column="18" lean-forward="false" selection-start-line="304" selection-start-column="18" selection-end-line="304" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foroOnmeda/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foroOnmeda/spiders/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foroOnmeda/middlewares.py.tmpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foroOnmeda/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/foroOnmeda/spiders/forosOnmedaSpyder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -619,34 +896,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/foroOnmeda/items.py">
+    <entry file="file://$PROJECT_DIR$/foroOnmeda/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        <state relative-caret-position="357">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/foroOnmeda/settings.py">
+    <entry file="file://$PROJECT_DIR$/foroOnmeda/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        <state relative-caret-position="238">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contrap.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67694">
+          <caret line="3982" column="28" lean-forward="false" selection-start-line="3982" selection-start-column="28" selection-end-line="3982" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onmedaGine.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/onmeda.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="936" column="49" lean-forward="true" selection-start-line="936" selection-start-column="49" selection-end-line="936" selection-end-column="49" />
+        <state relative-caret-position="91596">
+          <caret line="5388" column="70" lean-forward="false" selection-start-line="5388" selection-start-column="70" selection-end-line="5388" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fertilidad.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="2588" column="48" lean-forward="true" selection-start-line="2588" selection-start-column="48" selection-end-line="2588" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/foroOnmeda/spiders/forosOnmedaSpyder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="59" column="89" lean-forward="true" selection-start-line="59" selection-start-column="89" selection-end-line="59" selection-end-column="89" />
+        <state relative-caret-position="221">
+          <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>

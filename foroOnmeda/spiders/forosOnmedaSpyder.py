@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
 import sys
-from urllib2 import quote
 
 from urllib2 import quote
 from foroOnmeda.items import forosOnmedaSpyder
@@ -28,7 +27,6 @@ class ForosPozSpider(scrapy.Spider):
     def parse(self, response):
         # creo un xpath que recorre todos los titulos , textos  y url de cada tema
         items = response.xpath('//td[@class="cell-forum"]')
-        item = forosOnmedaSpyder()
         for article in items:
             forum_url = article.xpath('.//div[@class="forum-info"]/a/@href').extract_first()
             forum_title = article.xpath('.//div[@class="forum-info"]/a/text()').extract_first()
@@ -39,7 +37,7 @@ class ForosPozSpider(scrapy.Spider):
                     'forum_text': forum_text,
                     }
             # para probar solo con una url de un tema
-            if forum_url == "http://www.onmeda.es/foros/contracepción":
+            if forum_url == "http://www.onmeda.es/foros/embarazo-bebés-y-niños/fertilidad-e-infertilidad":
                 yield scrapy.Request(forum_url, callback=self.parse_urlsPagAsuntos, meta=meta)
 
 
